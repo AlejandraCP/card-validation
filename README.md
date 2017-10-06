@@ -52,4 +52,6 @@ El usuario ingresará su número de tarjeta y se mostrará una ventana emergente
   sino  
    mostrar('El número de su tarjeta es invalido')  
 
-  }
+  }  
+
+* fin de función
