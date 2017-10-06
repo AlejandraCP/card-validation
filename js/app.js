@@ -47,9 +47,9 @@ function isValidCard(){
   // Si el residuo se sum entre 10 es cero, el número de tarjeta es válido.
   // Si el residuo se sum entre 10 no es cero, el número de tarjeta no es válido.
   if(sum % 10 === 0){
-       alert('El número de su tarjeta es valido');
+    document.getElementById("demo").innerHTML = "El número de su tarjeta es valido";
+       //alert('El número de su tarjeta es valido');
   }
-  else alert('El número de su tarjeta es invalido');
+  else //alert('El número de su tarjeta es invalido');
+  document.getElementById("demo").innerHTML = "El número de su tarjeta es invalido";
 }
-
-isValidCard();
