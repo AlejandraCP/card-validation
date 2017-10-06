@@ -54,4 +54,8 @@ El usuario ingresará su número de tarjeta y se mostrará una ventana emergente
 
   }  
 
-* fin de función
+* fin de función  
+
+### Diagrama de flujo de función Cifrado César  
+
+![Texto alternativo](diagrama.jpg "diagrama").
