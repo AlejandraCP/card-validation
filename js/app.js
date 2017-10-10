@@ -21,21 +21,21 @@ function isValidCard(){
 
   for(var j = 0; j < numberCard.length; j++){
     // Convierte (parsea) una cadena y devuelve un entero de la base decimal.
-    var valueChar = parseInt(numberCard[j]);
+    var charValue = parseInt(numberCard[j]);
     // Si el índice del elemento es par, adiciona su valor a sum.
     if(j % 2 === 0){
-     sum += valueChar;
+     sum += charValue;
     }
     // Si el índice del elemento es impar, el elemento se multiplica por 2.
     if(j % 2 !== 0){
       // Si el producto es menor a 9, se adiciona a sum.
-      if((valueChar * 2) <= 9 ){
-       sum += (valueChar * 2);
+      if((charValue * 2) <= 9 ){
+       sum += (charValue * 2);
        // Si el producto es mayor a 9, se separan los dígitos del producto y se suman.
       }
-      if ((valueChar * 2) > 9){
+      if ((charValue * 2) > 9){
         // El producto se convierte a string para separar los dígitos.
-       var twoDigits = (valueChar * 2).toString();
+       var twoDigits = (charValue * 2).toString();
        var sumDigits = parseInt(twoDigits[0]) + parseInt(twoDigits[1]);
        sum += sumDigits;
       }
@@ -48,5 +48,5 @@ function isValidCard(){
     document.getElementById("demo").innerHTML = "El número de su tarjeta es valido";
   }
   else
-  document.getElementById("demo").innerHTML = "El número de su tarjeta es invalido";
+  document.getElementById("demo").innerHTML = "El número de su tarjeta es inválido";
 }
