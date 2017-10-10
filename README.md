@@ -9,10 +9,11 @@ El usuario ingresará su número de tarjeta y se mostrará una ventana emergente
 * Diagrama de flujo.  
 
 ### Archivos adjuntos en repositorio
-1. **Carpeta app** contiene archivo app.js en el cuál se ecuentra el código de la función con el lenguaje Javascript.  
+1. **Carpeta assets** contiene diagrama de flujo.
+2. **Carpeta app** contiene archivo app.js en el cuál se ecuentra el código de la función con el lenguaje Javascript.  
   <file:///C:/Users/maria.DESKTOP-1MMFGAP/Desktop/card%20validation/index.html>  
 2. **archivo index.html** está vinculado con app.js, el usuario podrá acceder a la función mediante este archivo.
-3. **README.md** contiene pseudocódigo de la función y diagrama de flujo.  
+3. **README.md** contiene pseudocódigo de la función.  
 
 
 ### Pseudocódigo de la función Cifrado César  
@@ -53,7 +54,3 @@ El usuario ingresará su número de tarjeta y se mostrará una ventana emergente
   }  
 
 * fin de función  
-
-### Diagrama de flujo de función Cifrado César
-
-![Texto alternativo](diagrama.jpg).
