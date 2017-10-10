@@ -3,22 +3,23 @@ function isValidCard(){
 
   // Almacena sumatoria de los dígitos.
   var sum = 0;
-  // Los dígitos obtenidos son separados en un array y el orden es invertido.
-  var numberCard = prompt('Escribe el número de tu tarjeta').split('').reverse();
+  // Almacena número proporcionado por usuario.
+  var numberCard;
 
-  // Mientras numberCard tenga más o menos de 16 elementos aparece nuevo promtp.
-  while(numberCard.length < 16 || numberCard.length > 16){
-    numberCard = prompt('El número de tu tarjeta debe contener solo 16 dígitos, \n vuelve a escribir el número de tu tarjeta.').split('').reverse();
-  }
-
-  // Ciclo que itera por cada elemento del array numberCard.
-  for(var i = 0; i < numberCard.length; i++){
-    // Si el elemento es igual a un string vacio aparece nuevo prompt.
-    // Si el elemento es NaN aparece nuevo prompt.
-    if(numberCard[i] === ' ' || isNaN(numberCard[i])){
-      numberCard = prompt('No coloque espacios vacios o letras, \n vuelve a escribir el número de tu tarjeta. ').split('').reverse();
+  // Hacer al menos una ves, si numberCard tiene más o menos de 16 elementos.
+  do{
+    // Los dígitos obtenidos son separados en un array y el orden es invertido.
+    numberCard = prompt('Escribe el número de tu tarjeta').split('').reverse();
+    // Ciclo que itera por cada elemento del array numberCard.
+    for(var i = 0; i < numberCard.length; i++){
+      // Si el elemento es igual a un string vacio aparece nuevo prompt.
+      // Si el elemento es NaN aparece nuevo prompt.
+      if(numberCard[i] === ' ' || isNaN(numberCard[i])){
+        numberCard = prompt('No coloque espacios vacíos o letras, \n vuelve a escribir el número de tu tarjeta. ').split('').reverse();
+      }
     }
-  }
+  }while(numberCard.length < 16 || numberCard.length > 16);
+
 
   // Ciclo que itera por cada elemento del array numberCard.
   for(var j = 0; j < numberCard.length; j++){
@@ -37,9 +38,9 @@ function isValidCard(){
       }
       if ((valueChar * 2) > 9){
         // El producto se convierte a string para separar los dígitos.
-       var twoDigitis = (valueChar * 2).toString();
-       var sumDigitis = parseInt(twoDigitis[0]) + parseInt(twoDigitis[1]);
-       sum += sumDigitis;
+       var twoDigits = (valueChar * 2).toString();
+       var sumDigits = parseInt(twoDigits[0]) + parseInt(twoDigits[1]);
+       sum += sumDigits;
       }
     }
   }
@@ -49,6 +50,6 @@ function isValidCard(){
   if(sum % 10 === 0){
     document.getElementById("demo").innerHTML = "El número de su tarjeta es valido";
   }
-  else 
+  else
   document.getElementById("demo").innerHTML = "El número de su tarjeta es invalido";
 }
