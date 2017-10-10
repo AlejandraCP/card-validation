@@ -27,16 +27,16 @@ El usuario ingresará su número de tarjeta y se mostrará una ventana emergente
         numberCard = mostrar('No coloque espacios vacios o letras, vuelve a escribir el número de tu tarjeta. ').separar caracteres('').invertir orden(): solicita número.  
          } Mientras (numberCard.longitud < 16 ó numberCard.longitud > 16)
   * para ( j = 0; si j < numberCard.longitud; j+1){  
-    valueChar = convertir a numéro(numberCard[j])  
+    charValue = convertir a numéro(numberCard[j])  
       * si ( j / 2 resto es 0 ){  
-        sum = sum + valueChar  
+        sum = sum + charValue  
       }  
       * si ( j / 2 resto !== 0 ){  
-          * si ((valueChar x 2) <= 9 ){  
-            sum = sum + (valueChar x 2)  
+          * si ((charValue x 2) <= 9 ){  
+            sum = sum + (charValue x 2)  
           }  
-          *  si ((valueChar x 2) > 9){  
-            twoDigitis = (valueChar x 2).convertir a string()  
+          *  si ((charValue x 2) > 9){  
+            twoDigitis = (charValue x 2).convertir a string()  
             sumDigitis = convertir a número(twoDigitis[primer dígito]) + convertir a número(twoDigitis[segundo dígito])  
             sum = sum + sumDigitis  
           }  
