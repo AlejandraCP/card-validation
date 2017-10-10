@@ -3,7 +3,6 @@ function isValidCard(){
 
   // Almacena sumatoria de los dígitos.
   var sum = 0;
-  // Almacena número proporcionado por usuario.
   var numberCard;
 
   // Hacer al menos una ves, si numberCard tiene más o menos de 16 elementos.
@@ -20,8 +19,6 @@ function isValidCard(){
     }
   }while(numberCard.length < 16 || numberCard.length > 16);
 
-
-  // Ciclo que itera por cada elemento del array numberCard.
   for(var j = 0; j < numberCard.length; j++){
     // Convierte (parsea) una cadena y devuelve un entero de la base decimal.
     var valueChar = parseInt(numberCard[j]);
