@@ -18,16 +18,13 @@ El usuario ingresará su número de tarjeta y se mostrará una ventana emergente
 
 * Inicio función Cifrado  
   * sum = 0
-  * numberCard = mostrar('Escribe el número de tu tarjeta').separar caracteres().invertir orden(): solicita número.  
-  * Mientras(numberCard.longitud < 16 ó numberCard.longitud > 16) {  
-    numberCard = mostrar('El número de tu tarjeta debe contener solo 16 dígitos, vuelve a escribir el número de tu tarjeta.').separar caracteres('').invertir orden(): solicita número.  
-  }  
-  * para ( i = 0; si i < numberCard.longitud; i+1){  
-    * si( numberCard[i] === string vacío ó numberCard[i] es NaN){  
-      numberCard = mostrar('No coloque espacios vacios o letras, vuelve a escribir el número de tu tarjeta. ').separar caracteres('').invertir orden(): solicita número.  
-       }  
-
-    }  
+  * numberCard
+  * hacer al menos una vez {
+    * numberCard = mostrar('Escribe el número de tu tarjeta').separar  
+    * para ( i = 0; si i < numberCard.longitud; i+1){  
+      * si( numberCard[i] === string vacío ó numberCard[i] es NaN){  
+        numberCard = mostrar('No coloque espacios vacios o letras, vuelve a escribir el número de tu tarjeta. ').separar caracteres('').invertir orden(): solicita número.  
+         } Mientras (numberCard.longitud < 16 ó numberCard.longitud > 16)
   * para ( j = 0; si j < numberCard.longitud; j+1){  
     valueChar = convertir a numéro(numberCard[j])  
       * si ( j / 2 resto es 0 ){  
