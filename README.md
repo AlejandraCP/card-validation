@@ -16,7 +16,7 @@ El usuario ingresará su número de tarjeta y se mostrará una ventana emergente
 4. **README.md** contiene pseudocódigo de la función.  
 
 
-### Pseudocódigo de la función Cifrado César  
+### Pseudocódigo de la función isValidCard 
 
 * Inicio función Cifrado  
   * sum = 0
